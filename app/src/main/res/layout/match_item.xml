@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewTeamOne"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:id="@+id/textViewTeamOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imageViewTeamOne"
+            app:layout_constraintLeft_toLeftOf="@id/imageViewTeamOne"
+            app:layout_constraintRight_toRightOf="@id/imageViewTeamOne"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Text View" />
+
+        <TextView
+            android:id="@+id/textViewScoreBoardOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imageViewTeamOne"
+            app:layout_constraintTop_toTopOf="@id/imageViewTeamOne"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewTeamOne"
+            app:layout_constraintRight_toLeftOf="@id/textViewX"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:text="22" />
+
+        <TextView
+            android:id="@+id/textViewX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/imageViewTeamOne"
+            app:layout_constraintRight_toLeftOf="@id/imageViewTeamTwo"
+            app:layout_constraintTop_toTopOf="@id/imageViewTeamOne"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewTeamOne"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="X"/>
+
+        <TextView
+            android:id="@+id/textViewScoreBoardTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toLeftOf="@id/imageViewTeamTwo"
+            app:layout_constraintTop_toTopOf="@id/imageViewTeamTwo"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewTeamTwo"
+            app:layout_constraintLeft_toRightOf="@id/textViewX"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:text="22" />
+
+        <ImageView
+            android:id="@+id/imageViewTeamTwo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            tools:srcCompat="@tools:sample/avatars"
+            />
+
+        <TextView
+            android:id="@+id/textViewTeamTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/imageViewTeamTwo"
+            app:layout_constraintLeft_toLeftOf="@id/imageViewTeamTwo"
+            app:layout_constraintRight_toRightOf="@id/imageViewTeamTwo"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:text="Text View" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
