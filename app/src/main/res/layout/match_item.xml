@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_default"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -10,84 +11,84 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/imageViewTeamOne"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:id="@+id/ivHomeTeamOne"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginStart="@dimen/margin_default"
             tools:srcCompat="@tools:sample/avatars"
             />
 
         <TextView
-            android:id="@+id/textViewTeamOne"
+            android:id="@+id/tvHomeTeamOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/imageViewTeamOne"
-            app:layout_constraintLeft_toLeftOf="@id/imageViewTeamOne"
-            app:layout_constraintRight_toRightOf="@id/imageViewTeamOne"
+            app:layout_constraintTop_toBottomOf="@id/ivHomeTeamOne"
+            app:layout_constraintLeft_toLeftOf="@id/ivHomeTeamOne"
+            app:layout_constraintRight_toRightOf="@id/ivHomeTeamOne"
             android:layout_marginTop="20dp"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textColor="@color/black"
             android:text="Text View" />
 
         <TextView
-            android:id="@+id/textViewScoreBoardOne"
+            android:id="@+id/tvHomeScoreBoardOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/imageViewTeamOne"
-            app:layout_constraintTop_toTopOf="@id/imageViewTeamOne"
-            app:layout_constraintBottom_toBottomOf="@id/imageViewTeamOne"
-            app:layout_constraintRight_toLeftOf="@id/textViewX"
-            android:textSize="25dp"
+            app:layout_constraintLeft_toRightOf="@id/ivHomeTeamOne"
+            app:layout_constraintTop_toTopOf="@id/ivHomeTeamOne"
+            app:layout_constraintBottom_toBottomOf="@id/ivHomeTeamOne"
+            app:layout_constraintRight_toLeftOf="@id/tvHomeX"
+            android:textSize="25sp"
             android:textColor="@color/black"
             android:text="22" />
 
         <TextView
-            android:id="@+id/textViewX"
+            android:id="@+id/tvHomeX"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/imageViewTeamOne"
-            app:layout_constraintRight_toLeftOf="@id/imageViewTeamTwo"
-            app:layout_constraintTop_toTopOf="@id/imageViewTeamOne"
-            app:layout_constraintBottom_toBottomOf="@id/imageViewTeamOne"
-            android:textSize="20dp"
+            app:layout_constraintLeft_toRightOf="@id/ivHomeTeamOne"
+            app:layout_constraintRight_toLeftOf="@id/ivTeamTwo"
+            app:layout_constraintTop_toTopOf="@id/ivHomeTeamOne"
+            app:layout_constraintBottom_toBottomOf="@id/ivHomeTeamOne"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:text="X"/>
 
         <TextView
-            android:id="@+id/textViewScoreBoardTwo"
+            android:id="@+id/tvHomeScoreBoardTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintRight_toLeftOf="@id/imageViewTeamTwo"
-            app:layout_constraintTop_toTopOf="@id/imageViewTeamTwo"
-            app:layout_constraintBottom_toBottomOf="@id/imageViewTeamTwo"
-            app:layout_constraintLeft_toRightOf="@id/textViewX"
-            android:textSize="25dp"
+            app:layout_constraintRight_toLeftOf="@id/ivTeamTwo"
+            app:layout_constraintTop_toTopOf="@id/ivTeamTwo"
+            app:layout_constraintBottom_toBottomOf="@id/ivTeamTwo"
+            app:layout_constraintLeft_toRightOf="@id/tvHomeX"
+            android:textSize="25sp"
             android:textColor="@color/black"
             android:text="22" />
 
         <ImageView
-            android:id="@+id/imageViewTeamTwo"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
+            android:id="@+id/ivTeamTwo"
+            android:layout_width="@dimen/team_image_size"
+            android:layout_height="@dimen/team_image_size"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
             tools:srcCompat="@tools:sample/avatars"
             />
 
         <TextView
-            android:id="@+id/textViewTeamTwo"
+            android:id="@+id/tvTeamTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/imageViewTeamTwo"
-            app:layout_constraintLeft_toLeftOf="@id/imageViewTeamTwo"
-            app:layout_constraintRight_toRightOf="@id/imageViewTeamTwo"
+            app:layout_constraintTop_toBottomOf="@id/ivTeamTwo"
+            app:layout_constraintLeft_toLeftOf="@id/ivTeamTwo"
+            app:layout_constraintRight_toRightOf="@id/ivTeamTwo"
             android:layout_marginTop="20dp"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:textColor="@color/black"
             android:text="Text View" />
 

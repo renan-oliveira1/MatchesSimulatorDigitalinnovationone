@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MatchesSimulatorDigitalinnovationone</string>
     <string name="txt_simulate">Button Simulate Matches</string>
+    <string name="cd_home_team">hometeamdescription</string>
 </resources>
