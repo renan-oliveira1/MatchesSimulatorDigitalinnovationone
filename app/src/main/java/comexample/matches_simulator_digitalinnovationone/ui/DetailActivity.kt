@@ -43,8 +43,8 @@ class DetailActivity : AppCompatActivity() {
             Glide.with(this).load(it.awayTeam.image).into(detailActivityBinding.ivAwayTeam)
             detailActivityBinding.tvAwayTeamName.text = it.awayTeam.name
             detailActivityBinding.rbAwayTeamStars.rating = it.awayTeam.stars.toFloat()
-            if(it.homeTeam.score != null){
-                detailActivityBinding.tvHomeTeamScore.text = it.homeTeam.score.toString()
+            if(it.awayTeam.score != null){
+                detailActivityBinding.tvAwayTeamScore.text = it.awayTeam.score.toString()
             }
         }
     }
