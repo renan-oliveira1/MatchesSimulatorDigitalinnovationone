@@ -43,14 +43,14 @@
             app:layout_constraintRight_toLeftOf="@id/tvHomeX"
             android:textSize="25sp"
             android:textColor="@color/black"
-            android:text="22" />
+            android:text="" />
 
         <TextView
             android:id="@+id/tvHomeX"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toRightOf="@id/ivHomeTeamOne"
-            app:layout_constraintRight_toLeftOf="@id/ivTeamTwo"
+            app:layout_constraintRight_toLeftOf="@id/ivAwayTeamTwo"
             app:layout_constraintTop_toTopOf="@id/ivHomeTeamOne"
             app:layout_constraintBottom_toBottomOf="@id/ivHomeTeamOne"
             android:textSize="20sp"
@@ -61,16 +61,16 @@
             android:id="@+id/tvHomeScoreBoardTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintRight_toLeftOf="@id/ivTeamTwo"
-            app:layout_constraintTop_toTopOf="@id/ivTeamTwo"
-            app:layout_constraintBottom_toBottomOf="@id/ivTeamTwo"
+            app:layout_constraintRight_toLeftOf="@id/ivAwayTeamTwo"
+            app:layout_constraintTop_toTopOf="@id/ivAwayTeamTwo"
+            app:layout_constraintBottom_toBottomOf="@id/ivAwayTeamTwo"
             app:layout_constraintLeft_toRightOf="@id/tvHomeX"
             android:textSize="25sp"
             android:textColor="@color/black"
-            android:text="22" />
+            android:text="" />
 
         <ImageView
-            android:id="@+id/ivTeamTwo"
+            android:id="@+id/ivAwayTeamTwo"
             android:layout_width="@dimen/team_image_size"
             android:layout_height="@dimen/team_image_size"
             app:layout_constraintRight_toRightOf="parent"
@@ -81,12 +81,12 @@
             />
 
         <TextView
-            android:id="@+id/tvTeamTwo"
+            android:id="@+id/tvAwayTeamTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/ivTeamTwo"
-            app:layout_constraintLeft_toLeftOf="@id/ivTeamTwo"
-            app:layout_constraintRight_toRightOf="@id/ivTeamTwo"
+            app:layout_constraintTop_toBottomOf="@id/ivAwayTeamTwo"
+            app:layout_constraintLeft_toLeftOf="@id/ivAwayTeamTwo"
+            app:layout_constraintRight_toRightOf="@id/ivAwayTeamTwo"
             android:layout_marginTop="20dp"
             android:textSize="15sp"
             android:textColor="@color/black"
